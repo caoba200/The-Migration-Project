@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+	    <meta charset="utf-8"/>
+        <title>Sign-up Page</title>    
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <table>
+                <td><a href="tiles_homepage.html"><img src="logo.png" alt="logo" /></a></td>
+                <td><h1>Sign-up Form</h1></td>
+            </table>
+        </header>
+        <section>
+            <article>
+                <h2>Sign-up Form</h2>
+                <form action="tiles_loginpage.html">
+                    <label>Email</label>
+                    <input type="text" name="email" placeholder="Enter your email ..."/><br/>
+                    <label>Username</label>
+                    <input type="text" name="username" placeholder="Enter your username ..."/><br/>
+                    <label>Password</label>
+                    <input type="password" name="password" placeholder="Enter your password ..."/><br/>
+                    <label>Confirm Password</label>
+                    <input type="password" name="confirm_password" placeholder="Confirm your password ..."/><br/>
+                    <label>Date of Birth</label>
+                    <input type="text" name="date_of_birth" placeholder="Enter your birthday ..."/><br/>
+                    <label>Profile Picture</label>
+                    <div id="upload_profile_picture">
+                        <button class="button">Upload</button>
+                        <input class="pp" type="text" name="profile_picture" placeholder="Upload your profile picture ..."/>
+                    </div>
+                    <br/>
+                    <input type="submit" name="signup_button" value="Sign-up"/><br/>
+                </form>
+                <hr/>
+                <a href="tiles_loginpage.html">Already have an account? Click here to Log In</a>
+            </article>
+        </section>
+    </body>
+</html>
