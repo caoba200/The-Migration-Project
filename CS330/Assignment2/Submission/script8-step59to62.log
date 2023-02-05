@@ -1,0 +1,704 @@
+Script started on Tue 06 Feb 2018 10:19:39 PM CST
+a049841[21]% HALstart
+[3;J[H[2J
+*********************************************
+*               HALos v5.3.6                *
+*                                           *
+*  Copyright (c) 2018 Robert J. Hilderman.  *
+*           All Rights Reserved.            *
+*********************************************
+
+HALstart: powering up HAL9000 ...
+HALstart: HAL9000 OK
+HAL9000: initializing ...
+HAL9000: boot sequence started ...
+HAL9000: checking clock ...
+HAL9000: clock OK
+HAL9000: loading HALbios ...
+HAL9000: HALbios OK
+HALbios: initializing ...
+HALbios: checking memory ...
+HALbios: memory OK
+HALbios: loading HALos ...
+HALbios: HALos OK
+HALos: initializing ...
+HALos: loading HALshell ...
+HALos: HALshell OK
+HALshell: initializing ...
+
+HALshell[1]> stopcpuscheduler
+HALshell: PID = [1] RETURN_VALUE = [ok] MESSAGE = [cpu scheduler stopped]
+HALshell[2]> halprograms/localintegerquicksortwithfileio sorteddata1 -
+HALshell: PID = [2] MESSAGE = [background process created]
+HALshell[3]> halprograms/localintegerquicksortwithfileio sortted   eddata2 priority=2 -
+HALshell: PID = [3] MESSAGE = [background process created]
+HALshell[4]> halprograms/localintegerquicksortwithfileio sorteddata3 -
+HALshell: PID = [4] MESSAGE = [background process created]
+HALshell[5]> halprograms/localintegerquicksortwithfileio sortted   eddata4 priority=0 -
+HALshell: PID = [5] MESSAGE = [background process created]
+HALshell[6]> halprograms/localintegerquicksortwithfileio sot rteddata5 -
+HALshell: PID = [6] MESSAGE = [background process created]
+HALshell[7]> halprograms/localintegerquicksortwithfileio sorteddata6 -
+HALshell: PID = [7] MESSAGE = [background process created]
+HALshell[8]> halprograms/localintegerquicksortwithfileio sortt eddata7 -
+HALshell: PID = [8] MESSAGE = [background process created]
+HALshell[9]> halprograms/localintegerquicksortwithfileio sorteddata8 0 -
+HALshell: PID = [9] MESSAGE = [background process created]
+HALshell[10]> halprograms/localintegerquicksortwithfileio sorteddata9 -
+HALshell: PID = [10] MESSAGE = [background process created]
+HALshell[11]> halprograms/localintegerquicksortwithfileio sorteddata10 priority=1 -
+HALshell: PID = [11] MESSAGE = [background process created]
+HALshell[12]> startcpuscheduler
+HALshell: PID = [12] RETURN_VALUE = [ok] MESSAGE = [cpu scheduler started]
+HALshell[13]> a<0> = a<00
+> = a<01
+> = a<01
+> = a<02
+> = a<02
+> = a<03
+a<> = a<003> = 
+> = 0a<04
+
+> = a<a<01
+4a<> = > = 500> = 
+
+0a<a<
+52a<> = > = 600> = 
+
+0a<a<
+63a<> = > = 700> = 
+
+0a<a<
+74a<> = > = 800> = 
+
+0a<a<
+85a<> = > = 900> = 
+
+0a<a<
+96a<> = > = 1000> = 
+0a<
+10a<> = 110> = 
+0a<
+11a<> = 120> = 
+0a<
+12a<> = 130> = 
+0a<
+13a<> = 140> = 
+0a<
+14a<> = 150> = 
+0a<
+15a<> = 160> = 
+0a<
+16a<> = 170> = 
+0a<
+17a<> = 180> = 
+0a<
+18a<> = 190> = 
+0a<
+19a<> = 200> = 
+0a<
+20a<> = 210> = 
+0a<
+21a<> = 220> = 
+0a<
+22a<> = 230> = 
+0a<
+23a<> = 240> = 
+0a<
+24a<> = 250> = 
+0a<
+25a<> = 260> = 
+0a<
+26a<> = 270> = 
+0a<
+27a<> = 280> = 
+0a<
+28a<> = 290> = 
+0a<
+29a<> = 300> = 
+0a<
+30a<> = 310> = 
+0a<
+31a<> = 00> = 
+0
+a<a<10> = > = 00
+
+a<a<21> = > = 00
+
+a<a<32> = > = 00
+
+a<a<43> = > = 00
+
+a<a<54> = > = 00
+
+a<a<
+65> = > = 00
+
+a<a<76> = > = 00
+
+a<a<87> = > = 00
+
+a<a<98> = > = 00
+
+a<a<109> = > = 00
+
+a<a<1110> = > = 00
+
+a<a<1211> = > = 00
+a<a<
+13a<> = 120> = 
+0a<
+14a<> = 130> = 
+0a<
+715a<> = > = 1400> = 
+
+a<0a<16
+8> = a<> = 0150
+> = 
+a<0a<17
+9> = a<016> = 
+> = a<0018
+
+> = a<a<01017
+> = > = a<0019
+
+> = a<a<01118
+> = a<> = 0200
+> = 
+0a<
+19a<a<> = 210> = 12
+0a<
+20a<> = > = 2200> = 
+
+0a<a<
+1321a<> = > = 2300> = 
+
+0a<a<
+1422a<> = > = 2400> = 
+
+0a<a<
+15a<23> = 25> = 0> = 0
+0
+a<
+a<16a<24> = 26> = 0> = 0
+0
+a<
+a<17a<25> = 27> = 0> = 00
+
+
+a<a<a<182628> = > = > = 00
+
+a<0a<2927> = > = 00
+
+a<a<
+3028> = > = a<0019
+
+a<a<> = 31290> = > = 
+00
+
+a<a<30> = 200> = 
+0a<
+31a<> = 021
+> = 0
+a<22> = 0
+a<23> = 0
+a<24> = 0
+a<25> = 0
+a<26> = 0
+a<27> = 0
+a<28> = 0
+a<29> = 0
+a<30> = 0
+a<31> = 0a<
+a<a<a<0a<> = a<0a<
+a<a<010> = 000
+0a<020> = > = 0> = 
+> = a<> = 3> = > = > = 0> = 
+0a<040> = 000
+0a<05
+> = 
+0
+
+
+a<
+6
+> = 
+a<0a<a<
+a<a<a<a<a<71> = 101
+1a<181> = 10> = 
+> = a<> = 9> = > = > = 0> = 
+> = a<0100> = 000
+0a<0110> = 
+0
+
+
+a<
+12
+> = 
+0
+
+a<a<a<13a<> = a<0a<
+a<a<a<142> = 202
+2a<2152> = 20> = 
+> = a<> = > = 16> = > = > = > = 000
+00a<00017
+
+
+> = 
+
+
+0
+a<a<
+a<a<a<a<a<a<333318333> = > = > = > = > = > = > = > = 0000000
+
+0
+
+
+
+
+a<a<
+a<a<a<a<a<419a<44444> = > = 4> = > = > = > = > = 00> = 00000
+
+0
+
+
+
+
+a<a<
+a<a<a<a<a<520a<55555> = > = 5> = > = > = > = > = 00> = 00000
+
+0
+
+
+
+
+a<a<
+a<a<a<a<a<621a<66666> = > = 6> = > = > = > = > = 00> = 00000
+
+0
+
+
+
+
+a<a<
+a<a<a<a<a<722a<77777> = > = 7> = > = > = > = > = 00> = 00000
+
+0
+
+
+
+
+a<a<
+a<a<a<a<a<823a<88888> = > = 8> = > = > = 0> = > = 
+0a<> = 240> = 000
+0a<025
+> = 00
+
+
+a<
+26
+> = 
+0a<
+
+a<a<a<a<27a<> = a<09
+a<9a<99289> = 90> = 
+9a<> = 29> = > = > = 0> = 
+> = a<030> = > = 000
+0a<0310> = 
+00
+
+
+
+
+
+a<
+a<a<a<a<a<10a<1010101010> = 10> = > = > = > = > = 0> = 00000
+0
+
+
+
+
+a<
+a<a<a<a<a<11a<1111111111> = 11> = > = > = > = > = 0> = 00000
+0
+
+
+
+
+a<
+a<a<a<a<a<12a<1212121212> = 12> = > = > = > = > = 0> = 00000
+0
+
+
+
+
+a<
+a<a<a<a<a<13a<1313131313> = 13> = > = > = > = > = 0> = 00000
+0
+
+
+
+
+a<
+a<a<a<a<a<14a<1414141414> = 14> = > = > = > = > = 0> = 00000
+0
+
+
+
+
+a<
+a<a<a<a<a<15a<1515151515> = 15> = > = > = > = > = 0> = 00000
+0
+
+
+
+
+a<
+a<a<a<a<a<16a<1616161616> = 16> = > = > = > = > = 0> = 00000
+0
+
+
+
+
+a<
+a<a<a<a<a<17a<1717171717> = 17> = > = > = > = > = 0> = 00000
+0
+
+
+
+
+a<
+a<a<a<a<a<18a<1818181818> = 18> = > = > = > = > = 0> = 00000
+0
+
+
+
+
+a<
+a<a<a<a<a<19a<1919191919> = 19> = > = > = > = > = 0> = 00000
+0
+
+
+
+
+a<
+a<a<a<a<a<20a<2020202020> = 20> = > = > = > = > = 0> = 00000
+0
+
+
+
+
+a<
+a<a<a<a<a<21a<2121212121> = 21> = > = > = > = > = 0> = 00000
+0
+
+
+
+
+a<
+a<a<a<a<a<22a<2222222222> = 22> = > = > = > = > = 0> = 00000
+0
+
+
+
+
+a<
+a<a<a<a<a<23a<2323232323> = 23> = > = > = > = > = 0> = 00000
+0
+
+
+
+
+a<
+a<a<a<a<a<24a<2424242424> = 24> = > = > = > = > = 0> = 00000
+0
+
+
+
+
+a<
+a<a<a<a<a<25a<2525252525> = 25> = > = > = > = > = 0> = 00000
+0
+
+
+
+
+a<
+a<a<a<a<a<26a<2626262626> = 26> = > = > = > = > = 0> = 00000
+0
+
+
+
+
+a<
+a<a<a<a<a<27a<2727272727> = 27> = > = > = > = > = 0> = 00000
+0
+
+
+
+
+a<
+a<a<a<a<a<28a<2828282828> = 28> = > = > = > = > = 0> = 00000
+0
+
+
+
+
+a<
+a<a<a<a<a<29a<2929292929> = 29> = > = > = > = > = 0> = 00000
+0
+
+
+
+
+a<
+a<a<a<a<a<30a<3030303030> = 30> = > = > = > = > = 0> = 00000
+0
+
+
+
+
+a<
+a<a<a<a<a<31a<3131313131> = 31> = > = > = > = > = 0> = 00000
+0
+
+
+
+
+
+a<a<a<a<a<a<00a<0000> = > = 0> = > = > = > = 00> = 0000
+
+0
+
+
+
+a<a<
+a<a<a<a<11a<1111> = > = 1> = > = > = > = 00> = 0000
+
+0
+
+
+
+a<a<
+a<a<a<a<22a<2222> = > = 2> = > = > = > = 00> = 0000
+
+0
+
+
+
+a<a<
+a<a<a<a<33a<3333> = > = 3> = > = > = > = 00> = 0000
+
+0
+
+
+
+a<a<
+a<a<a<a<44a<4444> = > = 4> = > = > = > = 00> = 0000
+
+0
+
+
+
+a<a<
+a<a<a<a<55a<5555> = > = 5> = > = > = > = 00> = 0000
+
+0
+
+
+
+a<a<
+a<a<a<a<66a<6666> = > = 6> = > = > = > = 00> = 0000
+
+0
+
+
+
+a<a<
+a<a<a<a<77a<7777> = > = 7> = > = > = > = 00> = 0000
+
+0
+
+
+
+a<a<
+a<a<a<a<88a<8888> = > = 8> = > = > = > = 00> = 0000
+
+0
+
+
+
+a<a<
+a<a<a<a<99a<9999> = > = 9> = > = > = > = 00> = 0000
+
+0
+
+
+
+a<a<
+a<a<a<a<1010a<10101010> = > = 10> = > = > = > = 00> = 0000
+
+0
+
+
+
+a<a<
+a<a<a<a<1111a<11111111> = > = 11> = > = > = > = 00> = 0000
+
+0
+
+
+
+a<a<
+a<a<a<a<1212a<12121212> = > = 12> = > = > = > = 00> = 0000
+
+0
+
+
+
+a<a<
+a<a<a<a<1313a<13131313> = > = 13> = > = > = > = 00> = 0000
+
+0
+
+
+
+a<a<
+a<a<a<a<1414a<14141414> = > = 14> = > = > = > = 00> = 0000
+
+0
+
+
+
+a<a<
+a<a<a<a<1515a<15151515> = > = 15> = > = > = > = 00> = 0000
+
+0
+
+
+
+a<a<
+a<a<a<a<1616a<16161616> = > = 16> = > = > = > = 00> = 0000
+
+0
+
+
+
+a<a<
+a<a<a<a<1717a<17171717> = > = 17> = > = > = > = 00> = 0000
+
+0
+
+
+
+a<a<
+a<a<a<a<1818a<18181818> = > = 18> = > = > = > = 00> = 0000
+
+0
+
+
+
+a<a<
+a<a<a<a<1919a<19191919> = > = 19> = > = > = > = 00> = 0000
+
+0
+
+
+
+a<a<
+a<a<a<a<2020a<20202020> = > = 20> = > = > = > = 00> = 0000
+
+0
+
+
+
+a<a<
+a<a<a<a<2121a<21212121> = > = 21> = > = > = > = 00> = 0000
+
+0
+
+
+
+a<a<
+a<a<a<a<2222a<22222222> = > = 22> = > = > = > = 00> = 0000
+
+0
+
+
+
+a<a<
+a<a<a<a<2323a<23232323> = > = 23> = > = > = > = 00> = 0000
+
+0
+
+
+
+a<a<
+a<a<a<a<2424a<24242424> = > = 24> = > = > = > = 00> = 0000
+
+0
+
+
+
+a<a<
+a<a<a<a<2525a<25252525> = > = 25> = > = > = > = 00> = 0000
+
+0
+
+
+
+a<a<
+a<a<a<a<2626a<26262626> = > = 26> = > = > = > = 00> = 0000
+
+0
+
+
+
+a<a<
+a<a<a<a<2727a<27272727> = > = 27> = > = > = > = 00> = 0000
+
+0
+
+
+
+a<a<
+a<a<a<a<2828a<28282828> = > = 28> = > = > = > = 00> = 0000
+
+0
+
+
+
+a<a<
+a<a<a<a<2929a<29292929> = > = 29> = > = > = > = 00> = 0000
+
+0
+
+
+
+a<a<
+a<a<a<a<3030a<30303030> = > = 30> = > = > = > = 00> = 0000
+
+0
+
+
+
+a<a<
+a<a<a<a<3131a<31313131> = > = 31> = > = > = > = 00> = 0000
+
+0
+
+
+
+
+^C  ^C  ^X  ^C  
+HALshell[13]> 
+HALshell[13]> shutdown
+
+HALshell: terminating ...
+HALos: terminating ...
+HAL9000: powering down ...
+
+a049841[22]% exit
+exit
+
+Script done on Tue 06 Feb 2018 10:29:08 PM CST

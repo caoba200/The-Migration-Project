@@ -1,0 +1,207 @@
+void HandleSystemCall ()
+{
+    fileDescriptor file;
+    size_t foundNetworkFile;
+    processDescriptor process;
+
+    cpuProcess.runningTime = cpuProcess.runningTime + atoi (HAL9000Message.parameter7.c_str ());
+    cpuProcess.systemCallInterruptCounter ++;
+    cpuProcess.action = "CONTINUE_EXECUTING_PROCESS";
+
+    if (HAL9000Message.parameter1 == "OPEN")
+    {
+        if (HAL9000Message.parameter3 == "keyboard" || HAL9000Message.parameter3 == "display")
+        {
+            SetSystemCallParameters (cpuProcess, HAL9000Message.parameter1, HAL9000Message.parameter3, HAL9000Message.parameter5, "", "", "FILE_OPEN_OK");
+            readyQueue.Enqueue (cpuProcess);
+        }
+        else // (HAL9000Message.parameter3 == some other file name)
+        {
+            SetSystemCallParameters (cpuProcess, HAL9000Message.parameter1, HAL9000Message.parameter3, HAL9000Message.parameter4, HAL9000Message.parameter5, "", "");
+            foundNetworkFile = HAL9000Message.parameter3.find ("@");
+            if (foundNetworkFile == string::npos)
+            {
+                if (diskProcess.pid == itos (-1) && diskQueue.IsEmpty ())
+                {
+                    diskProcess = cpuProcess;
+                    SendMessageToHALdiskDriver (diskProcess.pid, diskProcess.systemCall, diskProcess.systemCallParameter1, diskProcess.systemCallParameter3, "", "");
+                }
+                else
+                {
+                    diskQueue.Enqueue (cpuProcess);
+                }
+            }
+            else
+            {
+                if (networkProcess.pid == itos (-1) && networkQueue.IsEmpty ())
+                {
+                    networkProcess = cpuProcess;
+                    SendMessageToHALnetworkDriver (networkProcess.pid, networkProcess.systemCall, networkProcess.systemCallParameter1, networkProcess.systemCallParameter3, "", "");
+                }
+                else
+                {
+                    networkQueue.Enqueue (cpuProcess);
+                }
+            }
+        }
+    }
+    else if (HAL9000Message.parameter1 == "READ")
+    {
+        if (HAL9000Message.parameter3 == "keyboard")
+        {
+            SetSystemCallParameters (cpuProcess, HAL9000Message.parameter1, "", "", "", "", "");
+            if (keyboardProcess.pid == itos (-1) && keyboardQueue.IsEmpty ())
+            {
+                keyboardProcess = cpuProcess;
+                SendMessageToHALkeyboardDriver (keyboardProcess.pid, keyboardProcess.systemCall);
+            }
+            else
+            {
+                keyboardQueue.Enqueue (cpuProcess);
+            }
+        }
+        else // (HAL9000Message.parameter3 == some other file name)
+        {
+            SetSystemCallParameters (cpuProcess, HAL9000Message.parameter1, HAL9000Message.parameter3, HAL9000Message.parameter4, "", "", "");
+            foundNetworkFile = HAL9000Message.parameter3.find ("@");
+            if (foundNetworkFile == string::npos)
+            {
+                if (diskProcess.pid == itos (-1) && diskQueue.IsEmpty ())
+                {
+                    cpuProcess.fileTable.Find (HAL9000Message.parameter3, HAL9000Message.parameter4);
+                    file = cpuProcess.fileTable.Read ();
+                    diskProcess = cpuProcess;
+                    SendMessageToHALdiskDriver (diskProcess.pid, diskProcess.systemCall, diskProcess.systemCallParameter1, "input", file.markerPosition, "");
+                }
+                else
+                {
+                    diskQueue.Enqueue (cpuProcess);
+                }
+            }
+            else
+            {
+                if (networkProcess.pid == itos (-1) && networkQueue.IsEmpty ())
+                {
+                    cpuProcess.fileTable.Find (HAL9000Message.parameter3, HAL9000Message.parameter4);
+                    file = cpuProcess.fileTable.Read ();
+                    networkProcess = cpuProcess;
+                    SendMessageToHALnetworkDriver (networkProcess.pid, networkProcess.systemCall, networkProcess.systemCallParameter1, "input", file.markerPosition, "");
+                }
+                else
+                {
+                    networkQueue.Enqueue (cpuProcess);
+                }
+            }
+        }
+    }
+    else if (HAL9000Message.parameter1 == "WRITE" || HAL9000Message.parameter1 == "NEWLINE")
+    {
+        if (HAL9000Message.parameter3 == "display")
+        {
+            SetSystemCallParameters (cpuProcess, HAL9000Message.parameter1, HAL9000Message.parameter5, "", "", "", "");
+            if (displayProcess.pid == itos (-1) && displayQueue.IsEmpty ())
+            {
+                displayProcess = cpuProcess;
+                SendMessageToHALdisplayDriver (displayProcess.pid, displayProcess.systemCall, displayProcess.systemCallParameter1);
+            }
+            else
+            {
+                displayQueue.Enqueue (cpuProcess);
+            }
+        }
+        else // (HAL9000Message.parameter3 == some file name)
+        {
+            SetSystemCallParameters (cpuProcess, HAL9000Message.parameter1, HAL9000Message.parameter5, HAL9000Message.parameter3, HAL9000Message.parameter4, "", "");
+            foundNetworkFile = HAL9000Message.parameter3.find ("@");
+            if (foundNetworkFile == string::npos)
+            {
+                if (diskProcess.pid == itos (-1) && diskQueue.IsEmpty ())
+                {
+                    cpuProcess.fileTable.Find (HAL9000Message.parameter3, HAL9000Message.parameter4);
+                    file = cpuProcess.fileTable.Read ();
+                    diskProcess = cpuProcess;
+                    SendMessageToHALdiskDriver (diskProcess.pid, diskProcess.systemCall, diskProcess.systemCallParameter2, "output", "", diskProcess.systemCallParameter1);
+                }
+                else
+                {
+                    diskQueue.Enqueue (cpuProcess);
+                }
+            }
+            else
+            {
+                if (networkProcess.pid == itos (-1) && networkQueue.IsEmpty ())
+                {
+                    cpuProcess.fileTable.Find (HAL9000Message.parameter3, HAL9000Message.parameter4);
+                    file = cpuProcess.fileTable.Read ();
+                    networkProcess = cpuProcess;
+                    SendMessageToHALnetworkDriver (networkProcess.pid, networkProcess.systemCall, networkProcess.systemCallParameter2, "output", "", networkProcess.systemCallParameter1);
+                }
+                else
+                {
+                    networkQueue.Enqueue (cpuProcess);
+                }
+            }
+
+        }
+    }
+    else if (HAL9000Message.parameter1 == "CLOSE")
+    {
+        if (!(HAL9000Message.parameter3 == "keyboard") && !(HAL9000Message.parameter3 == "display"))
+        {
+            cpuProcess.fileTable.Find (HAL9000Message.parameter3, HAL9000Message.parameter4);
+            cpuProcess.fileTable.Delete ();
+        }
+        SetSystemCallParameters (cpuProcess, "", "", "", "", "", "FILE_CLOSE_OK");
+        readyQueue.Enqueue (cpuProcess);
+    }
+    else if (HAL9000Message.parameter1 == "CLONE")
+    {
+        process = CloneProcessImage (cpuProcess);
+        if (process.pid != itos (-1))
+        {
+            if (GetRandomNoFromZeroTo (2) == 0)
+            {
+                SetSystemCallParameters (cpuProcess, "", "", "", "", process.pid, "CLONE_OK");
+                readyQueue.Enqueue (cpuProcess);
+                SetSystemCallParameters (process, "", "", "", "", itos (0), "CLONE_OK");
+                readyQueue.Enqueue (process);
+            }
+            else
+            {
+                SetSystemCallParameters (process, "", "", "", "", itos (0), "CLONE_OK");
+                readyQueue.Enqueue (process);
+                SetSystemCallParameters (cpuProcess, "", "", "", "", process.pid, "CLONE_OK");
+                readyQueue.Enqueue (cpuProcess);
+            }
+        }
+        else
+        {
+            SetSystemCallParameters (cpuProcess, "", "", "", "", "", "CLONE_FAILED");
+            readyQueue.Enqueue (cpuProcess);
+        }
+    } 
+    else if (HAL9000Message.parameter1 == "RUN")
+    {
+        process = ReplaceProcessImage (cpuProcess, HAL9000Message.parameter3, HAL9000Message.parameter4);
+        if (process.pid != itos (-1))
+        {
+            cpuProcess.action = "PROCESS_DONE";
+            UpdatePartitionTable (cpuProcess.pid, cpuProcess.action);                
+            if (cpuProcess.type == "FOREGROUND_PROCESS" && process.type == "BACKGROUND_PROCESS")
+            {
+                SendReturnStatusToHALshell (cpuProcess.pid, "", "foreground process image replaced by background process image");
+            }
+            SetSystemCallParameters (process, "", "", "", "", "", "");
+            readyQueue.Enqueue (process);
+        }
+        else
+        {
+            SetSystemCallParameters (cpuProcess, "", "", "", "", "", "RUN_FAILED");
+            readyQueue.Enqueue (cpuProcess);
+        }
+    } 
+
+    cpuProcess = NullProcess ();
+
+    return;
+}

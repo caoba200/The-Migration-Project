@@ -1,0 +1,92 @@
+Script started on Mon 22 Jan 2018 11:07:25 PM CST
+a049850[21]% HALstart
+[3;J[H[2J
+*********************************************
+*               HALos v5.3.6                *
+*                                           *
+*  Copyright (c) 2018 Robert J. Hilderman.  *
+*           All Rights Reserved.            *
+*********************************************
+
+HALstart: powering up HAL9000 ...
+HALstart: HAL9000 OK
+HAL9000: initializing ...
+HAL9000: boot sequence started ...
+HAL9000: checking clock ...
+HAL9000: clock OK
+HAL9000: loading HALbios ...
+HAL9000: HALbios OK
+HALbios: initializing ...
+HALbios: checking memory ...
+HALbios: memory OK
+HALbios: loading HALos ...
+HALbios: HALos OK
+HALos: initializing ...
+HALos: loading HALshell ...
+HALos: HALshell OK
+HALshell: initializing ...
+
+HALshell[1]> setshellname
+HALshell: the number of arguments for setshellname is incorrect
+HALshell[2]> shet   etshellname BOA     myshell newshell
+HALshell: the number of arguments for setshellname is incorrect
+HALshell[3]> setterminator 
+HALshell: the number of arguments for setterminator is incorrect
+HALshell[4]> setterminator > >>
+HALshell: the number of arguments for setterminator is incorrect
+HALshell[5]> sethistorysize 5 5
+HALshell: the number of arguments for sethistorysize is incorrect
+HALshell[6]> sethistorysize
+HALshell: the number of arguments for sethistorysize is incorrect
+HALshell[7]> sethistorysize 12ab
+HALshell: the argument format is incorrect (must be an integer)
+HALshell[8]> showhistorysize 4
+HALshell: showhistorysize does not require any arguments
+HALshell[9]> showhistory history
+HALshell: showhistory does not require any arguments
+HALshell[10]> ! 2 3
+HALshell: the number of arguments is incorrect
+HALshell[11]> ! 12ab
+HALshell: the argument format is incorrect (must be an integer)
+HALshell[12]> ! -3
+HALshell: the argument is incorrect
+HALshell[13]> st etnewnamesize 
+HALshell: MESSAGE = [command not found]
+HALshell[14]> setnewnamessize
+HALshell: the number of arguments for setnewnamesize is incorrect
+HALshell[15]> setnewnamessize 3 4
+HALshell: the number of arguments for setnewnamesize is incorrect
+HALshell[16]> setnewnamessize ab
+HALshell: the argument format is incorrect (must be an integer)
+HALshell[17]> set   shownewnames 4
+HALshell: shownewname does not require any arguments
+HALshell[18]> setnewnamessize 0
+HALshell[19]> setnewname sb a    ab about 
+HALshell: newnameList is full or the size is 0
+HALshell[20]> setnewname ab
+HALshell: the number of arguments for setnewname is incorrect
+HALshell[21]> shownewnames about
+HALshell: shownewname does not require any arguments
+HALshell[22]> setnewnamesize 10       ssize 10
+HALshell[23]> setnewname ab about
+HALshell[24]> removenewname
+HALshell: the number of arguments for removenewname is incorrect
+HALshell[25]> shownewnames
+ab about 
+HALshell[26]> removenewname sh
+HALshell: name is not on newnames list
+HALshell[27]> writenewnames 
+HALshell: the number of arguments for writenewnames is incorrect
+HALshell[28]> readnewnaems   mes file1 file 2  2
+HALshell: the number of arguments for readnewname is incorrect
+HALshell[29]> restoredefaults arg1
+HALshell: restoredefaults does not require any arguments
+HALshell[30]> shutdown
+
+HALshell: terminating ...
+HALos: terminating ...
+HAL9000: powering down ...
+a049850[22]% exit
+exit
+
+Script done on Mon 22 Jan 2018 11:15:11 PM CST

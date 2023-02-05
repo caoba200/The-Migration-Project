@@ -1,0 +1,240 @@
+Script started on Mon 02 Apr 2018 01:15:07 AM CST
+a049841[21]% HALstart
+[3;J[H[2J
+*********************************************
+*               HALos v5.3.6                *
+*                                           *
+*  Copyright (c) 2018 Robert J. Hilderman.  *
+*           All Rights Reserved.            *
+*********************************************
+
+HALstart: powering up HAL9000 ...
+HALstart: HAL9000 OK
+HAL9000: initializing ...
+HAL9000: boot sequence started ...
+HAL9000: checking clock ...
+HAL9000: clock OK
+HAL9000: loading HALbios ...
+HAL9000: HALbios OK
+HALbios: initializing ...
+HALbios: checking memory ...
+HALbios: memory OK
+HALbios: loading HALos ...
+HALbios: HALos OK
+HALos: initializing ...
+HALos: loading HALshell ...
+HALos: HALshell OK
+HALshell: initializing ...
+
+HALshell[1]> stopcpuscheduler
+HALshell: PID = [1] RETURN_VALUE = [ok] MESSAGE = [cpu scheduler stopped]
+HALshell[2]> halprograms/localiu ntegerquicksortwithfileio sorteddata1 -
+HALshell: PID = [2] MESSAGE = [background process created]
+HALshell[3]> halprograms/localintegerquicksortwithfileio sorteddata1 -^[[D^[[D^[[D             ^[[C^[[C^[[C^[[C^[[C                     a2 -
+HALshell: PID = [3] MESSAGE = [background process created]
+HALshell[4]> halprograms/localintegerquicksortwithfileio sorteddata1 -   3 -
+HALshell: PID = [4] MESSAGE = [background process created]
+HALshell[5]> startcpuscheduler
+HALshell: PID = [5] RETURN_VALUE = [ok] MESSAGE = [cpu scheduler started]
+HALshell[6]> a<a<a<000> = > = > = 323232
+
+
+a<a<a<111> = > = > = 313131
+
+
+a<a<a<222> = > = > = 303030
+
+
+a<a<a<333> = > = > = 292929
+
+
+a<a<a<444> = > = > = 282828
+
+
+a<a<a<555> = > = > = 272727
+
+
+a<a<a<666> = > = > = 262626
+
+
+a<a<a<777> = > = > = 252525
+
+
+a<a<a<888> = > = > = 242424
+
+
+a<a<a<999> = > = > = 232323
+
+
+a<a<a<101010> = > = > = 222222
+
+
+a<a<a<111111> = > = > = 212121
+
+
+a<a<a<121212> = > = > = 202020
+
+
+a<a<a<131313> = > = > = 191919
+
+
+a<a<a<141414> = > = > = 181818
+
+
+a<a<a<151515> = > = > = 171717
+
+
+a<a<a<161616> = > = > = 161616
+
+
+a<a<a<171717> = > = > = 151515
+
+
+a<a<a<181818> = > = > = 141414
+
+
+a<a<a<191919> = > = > = 131313
+
+
+a<a<a<202020> = > = > = 121212
+
+
+a<a<a<212121> = > = > = 111111
+
+
+a<a<a<222222> = > = > = 101010
+
+
+a<a<a<232323> = > = > = 999
+
+
+a<a<a<242424> = > = > = 888
+
+
+a<a<a<252525> = > = > = 777
+
+
+a<a<a<262626> = > = > = 666
+
+
+a<a<a<272727> = > = > = 555
+
+
+a<a<a<282828> = > = > = 444
+
+
+a<a<a<292929> = > = > = 333
+
+
+a<a<a<303030> = > = > = 222
+
+
+a<a<a<313131> = > = > = 111
+
+
+a<a<0a<0> = 0> = 1> = 1
+1
+a<
+a<1a<1> = 1> = 2> = 2
+2
+a<
+a<2a<2> = 2> = 3> = 3
+3
+a<
+a<3a<3> = 3> = 4> = 4
+4
+a<
+a<4a<4> = 4> = 5> = 5
+5
+a<
+a<5a<5> = 5> = 6> = 6
+6
+a<
+a<6a<6> = 6> = 7> = 7
+7
+a<
+a<7a<7> = 7> = 8> = 8
+8
+a<
+a<8a<8> = 8> = 9> = 9
+9
+a<
+a<9a<9> = 9> = 10> = 10
+10
+a<
+a<10a<10> = 10> = 11> = 11
+11
+a<
+a<11a<11> = 11> = 12> = 12
+12
+a<
+a<12a<12> = 12> = 13> = 13
+13
+a<
+a<13a<13> = 13> = 14> = 14
+14
+a<
+a<14a<14> = 14> = 15> = 15
+15
+a<
+a<15a<15> = 15> = 16> = 16
+16
+a<
+a<16a<16> = 16> = 17> = 17
+17
+a<
+a<17a<17> = 17> = 18> = 18
+18
+a<
+a<18a<18> = 18> = 19> = 19
+19
+a<
+a<19a<19> = 19> = 20> = 20
+20
+a<
+a<20a<20> = 20> = 21> = 21
+21
+a<
+a<21a<21> = 21> = 22> = 22
+22
+a<
+a<22a<22> = 22> = 23> = 23
+23
+a<
+a<23a<23> = 23> = 24> = 24
+24
+a<
+a<24a<24> = 24> = 25> = 25
+25
+a<
+a<25a<25> = 25> = 26> = 26
+26
+a<
+a<26a<26> = 26> = 27> = 27
+27
+a<
+a<27a<27> = 27> = 28> = 28
+28
+a<
+a<28a<28> = 28> = 29> = 29
+29
+a<
+a<29a<29> = 29> = 30> = 30
+30
+a<
+a<30a<30> = 30> = 31> = 31
+31
+a<
+a<31a<31> = 31> = 32> = 32
+32
+
+
+HALshell[6]> shutdown
+
+HALshell: terminating ...
+HALos: terminating ...
+HAL9000: powering down ...
+a049841[22]% rxit[K[K[K[Kexit
+exit
+
+Script done on Mon 02 Apr 2018 01:17:38 AM CST

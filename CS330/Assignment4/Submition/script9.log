@@ -1,0 +1,579 @@
+Script started on Tue 06 Mar 2018 11:24:47 PM CST
+a049841[21]% HALstart
+[3;J[H[2J
+*********************************************
+*               HALos v5.3.6                *
+*                                           *
+*  Copyright (c) 2018 Robert J. Hilderman.  *
+*           All Rights Reserved.            *
+*********************************************
+
+HALstart: powering up HAL9000 ...
+HALstart: HAL9000 OK
+HAL9000: initializing ...
+HAL9000: boot sequence started ...
+HAL9000: checking clock ...
+HAL9000: clock OK
+HAL9000: loading HALbios ...
+HAL9000: HALbios OK
+HALbios: initializing ...
+HALbios: checking memory ...
+HALbios: memory OK
+HALbios: loading HALos ...
+HALbios: HALos OK
+HALos: initializing ...
+HALos: loading HALshell ...
+HALos: HALshell OK
+HALshell: initializing ...
+
+HALshell[1]> stopcpuscheduler
+HALshell: PID = [1] RETURN_VALUE = [ok] MESSAGE = [cpu scheduler stopped]
+HALshell[2]> H halprograms/localintegerquicksortqith    eit   withfileio -
+HALshell: PID = [2] MESSAGE = [background process created]
+HALshell[3]> halprograms/localintegerquicksortwithfileio -
+HALshell: PID = [3] MESSAGE = [background process created]
+HALshell[4]> halprograms/localintegerquicksortwithfileio -
+HALshell: PID = [4] MESSAGE = [background process created]
+HALshell[5]> halprograms/localintegerquicksortwithfileio -
+HALshell: PID = [5] MESSAGE = [background process created]
+HALshell[6]> halprograms/localintegerquicksortwithfileio -
+HALshell: PID = [6] MESSAGE = [background process created]
+HALshell[7]> halprograms/localintegerquicksortwithfileio -
+HALshell: PID = [7] MESSAGE = [background process created]
+HALshell[8]> halprograms/localintegerquicksortwithfileio -
+HALshell: PID = [8] MESSAGE = [background process created]
+HALshell[9]> halprograms/localintegerquicksortwithfileio -
+HALshell: PID = [9] MESSAGE = [background process created]
+HALshell[10]> startspu   cpuscheduler
+HALshell: PID = [10] RETURN_VALUE = [ok] MESSAGE = [cpu scheduler started]
+HALshell[11]> a<a<a<a<a<a<a<0a<000000> = 0> = > = > = > = > = > = 32> = 323232323232
+32
+
+
+
+
+
+a<
+a<a<a<a<a<a<1a<111111> = 1> = > = > = > = > = > = 31> = 313131313131
+31
+
+
+
+
+
+a<
+a<a<a<a<a<a<2a<222222> = 2> = > = > = > = > = > = 30> = 303030303030
+30
+
+
+
+
+
+a<
+a<a<a<a<a<a<3a<333333> = 3> = > = > = > = > = > = 29> = 292929292929
+29
+
+
+
+
+
+a<
+a<a<a<a<a<a<4a<444444> = 4> = > = > = > = > = > = 28> = 282828282828
+28
+
+
+
+
+
+a<
+a<a<a<a<a<a<5a<555555> = 5> = > = > = > = > = > = 27> = 272727272727
+27
+
+
+
+
+
+a<
+a<a<a<a<a<a<6a<666666> = 6> = > = > = > = > = > = 26> = 262626262626
+26
+
+
+
+
+
+a<
+a<a<a<a<a<a<7a<777777> = 7> = > = > = > = > = > = 25> = 252525252525
+25
+
+
+
+
+
+a<
+a<a<a<a<a<a<8a<888888> = 8> = > = > = > = > = > = 24> = 242424242424
+24
+
+
+
+
+
+a<
+a<a<a<a<a<a<9a<999999> = 9> = > = > = > = > = > = 23> = 232323232323
+23
+
+
+
+
+
+a<
+a<a<a<a<a<a<10a<101010101010> = 10> = > = > = > = > = > = 22> = 222222222222
+22
+
+
+
+
+
+a<
+a<a<a<a<a<a<11a<111111111111> = 11> = > = > = > = > = > = 21> = 212121212121
+21
+
+
+
+
+
+a<
+a<a<a<a<a<a<12a<121212121212> = 12> = > = > = > = > = > = 20> = 202020202020
+20
+
+
+
+
+
+a<
+a<a<a<a<a<a<13a<131313131313> = 13> = > = > = > = > = > = 19> = 191919191919
+19
+
+
+
+
+
+a<
+a<a<a<a<a<a<14a<141414141414> = 14> = > = > = > = > = > = 18> = 181818181818
+18
+
+
+
+
+
+a<
+a<a<a<a<a<a<15a<151515151515> = 15> = > = > = > = > = > = 17> = 171717171717
+17
+
+
+
+
+
+a<
+a<a<a<a<a<a<16a<161616161616> = 16> = > = > = > = > = > = 16> = 161616161616
+16
+
+
+
+
+
+a<
+a<a<a<a<a<a<17a<171717171717> = 17> = > = > = > = > = > = 15> = 151515151515
+15
+
+
+
+
+
+a<
+a<a<a<a<a<a<18a<181818181818> = 18> = > = > = > = > = > = 14> = 141414141414
+14
+
+
+
+
+
+a<
+a<a<a<a<a<a<19a<191919191919> = 19> = > = > = > = > = > = 13> = 131313131313
+13
+
+
+
+
+
+a<
+a<a<a<a<a<a<20a<202020202020> = 20> = > = > = > = > = > = 12> = 121212121212
+12
+
+
+
+
+
+a<
+a<a<a<a<a<a<21a<212121212121> = 21> = > = > = > = > = > = 11> = 111111111111
+11
+
+
+
+
+
+a<
+a<a<a<a<a<a<22a<222222222222> = 22> = > = > = > = > = > = 10> = 101010101010
+10
+
+
+
+
+
+a<
+a<a<a<a<a<a<23a<232323232323> = 23> = > = > = > = > = > = 9> = 999999
+9
+
+
+
+
+
+a<
+a<a<a<a<a<a<24a<242424242424> = 24> = > = > = > = > = > = 8> = 888888
+8
+
+
+
+
+
+a<
+a<a<a<a<a<a<25a<252525252525> = 25> = > = > = > = > = > = 7> = 777777
+7
+
+
+
+
+
+a<
+a<a<a<a<a<a<26a<262626262626> = 26> = > = > = > = > = > = 6> = 666666
+6
+
+
+
+
+
+a<
+a<a<a<a<a<a<27a<272727272727> = 27> = > = > = > = > = > = 5> = 555555
+5
+
+
+
+
+
+a<
+a<a<a<a<a<a<28a<282828282828> = 28> = > = > = > = > = > = 4> = 444444
+4
+
+
+
+
+
+a<
+a<a<a<a<a<a<29a<292929292929> = 29> = > = > = > = > = > = 3> = 333333
+3
+
+
+
+
+
+a<
+a<a<a<a<a<a<30a<303030303030> = 30> = > = > = > = > = > = 2> = 222222
+2
+
+
+
+
+
+a<
+a<a<a<a<a<a<31a<313131313131> = 31> = > = > = > = > = > = 1> = 111111
+1
+
+
+
+
+
+
+a<0a<a<> = 0a<a<01a<a<a<> = 00> = 
+0001> = > = 1a<> = > = > = 
+11
+1111a<
+
+a<> = 
+
+
+1a<a<12a<a<a<> = 11> = 
+1112> = > = 2a<> = > = > = 
+22
+2222a<
+
+a<> = 
+
+
+2a<a<23a<a<a<> = 22> = 
+2223> = > = 3a<> = > = > = 
+33
+3333a<
+
+a<> = 
+
+
+3a<a<34a<a<a<> = 33> = 
+3334> = > = 4a<> = > = > = 
+44
+4444a<
+
+a<> = 
+
+
+4a<a<45a<a<a<> = 44> = 
+4445> = > = 5a<> = > = > = 
+55
+5555a<
+
+a<> = 
+
+
+5a<a<56a<a<a<> = 55> = 
+5556> = > = 6a<> = > = > = 
+66
+6666a<
+
+a<> = 
+
+
+6a<a<67a<a<a<> = 66> = 
+6667> = > = 7a<> = > = > = 
+77
+7777a<
+
+a<> = 
+
+
+7a<a<78a<a<a<> = 77> = 
+7778> = > = 8a<> = > = > = 
+88
+8888a<
+
+a<> = 
+
+
+8a<a<89a<a<a<> = 88> = 
+8889> = > = 9a<> = > = > = 
+99
+9999a<
+
+a<> = 
+
+
+9a<a<910a<a<a<> = 99> = 
+99910> = > = 10a<> = > = > = 
+1010
+10101010a<
+
+a<> = 
+
+
+10a<a<1011a<a<a<> = 1010> = 
+10101011> = > = 11a<> = > = > = 
+1111
+11111111a<
+
+a<> = 
+
+
+11a<a<1112a<a<a<> = 1111> = 
+11111112> = > = 12a<> = > = > = 
+1212
+12121212a<
+
+a<> = 
+
+
+12a<a<1213a<a<a<> = 1212> = 
+12121213> = > = 13a<> = > = > = 
+1313
+13131313a<
+
+a<> = 
+
+
+13a<a<1314a<a<a<> = 1313> = 
+13131314> = > = 14a<> = > = > = 
+1414
+14141414a<
+
+a<> = 
+
+
+14a<a<1415a<a<a<> = 1414> = 
+14141415> = > = 15a<> = > = > = 
+1515
+15151515a<
+
+a<> = 
+
+
+15a<a<1516a<a<a<> = 1515> = 
+15151516> = > = 16a<> = > = > = 
+1616
+16161616a<
+
+a<> = 
+
+
+16a<a<1617a<a<a<> = 1616> = 
+16161617> = > = 17a<> = > = > = 
+1717
+17171717a<
+
+a<> = 
+
+
+17a<a<1718a<a<a<> = 1717> = 
+17171718> = > = 18a<> = > = > = 
+1818
+18181818a<
+
+a<> = 
+
+
+18a<a<1819a<a<a<> = 1818> = 
+18181819> = > = 19a<> = > = > = 
+1919
+19191919a<
+
+a<> = 
+
+
+19a<a<1920a<a<a<> = 1919> = 
+19191920> = > = 20a<> = > = > = 
+2020
+20202020a<
+
+a<> = 
+
+
+20a<a<2021a<a<a<> = 2020> = 
+20202021> = > = 21a<> = > = > = 
+2121
+21212121a<
+
+a<> = 
+
+
+21a<a<2122a<a<a<> = 2121> = 
+21212122> = > = 22a<> = > = > = 
+2222
+22222222a<
+
+a<> = 
+
+
+22a<a<2223a<a<a<> = 2222> = 
+22222223> = > = 23a<> = > = > = 
+2323
+23232323a<
+
+a<> = 
+
+
+23a<a<2324a<a<a<> = 2323> = 
+23232324> = > = 24a<> = > = > = 
+2424
+24242424a<
+
+a<> = 
+
+
+24a<a<2425a<a<a<> = 2424> = 
+24242425> = > = 25a<> = > = > = 
+2525
+25252525a<
+
+a<> = 
+
+
+25a<a<2526a<a<a<> = 2525> = 
+25252526> = > = 26a<> = > = > = 
+2626
+26262626a<
+
+a<> = 
+
+
+26a<a<2627a<a<a<> = 2626> = 
+26262627> = > = 27a<> = > = > = 
+2727
+27272727a<
+
+a<> = 
+
+
+27a<a<2728a<a<a<> = 2727> = 
+27272728> = > = 28a<> = > = > = 
+2828
+28282828a<
+
+a<> = 
+
+
+28a<a<2829a<a<a<> = 2828> = 
+28282829> = > = 29a<> = > = > = 
+2929
+29292929a<
+
+a<> = 
+
+
+29a<a<2930a<a<a<> = 2929> = 
+29292930> = > = 30a<> = > = > = 
+3030
+30303030a<
+
+a<> = 
+
+
+30a<a<3031a<a<a<> = 3030> = 
+30303031> = > = 31a<> = > = > = 
+3131
+31313131a<
+
+a<> = 
+
+
+31a<a<3132a<a<a<> = 3131> = 
+31313132> = > = 32> = > = > = 
+3232
+323232
+
+
+
+
+
+HALshell[11]> result
+HALshell: PID = [2] RETURN_VALUE = [OK]MESSAGE = [creation time =0 -7949 63173 4 425 startTime = 0 endTime = 63173]
+HALshell: PID = [3] RETURN_VALUE = [OK]MESSAGE = [creation time =0 -7949 63524 4 425 startTime = 0 endTime = 63524]
+HALshell: PID = [4] RETURN_VALUE = [OK]MESSAGE = [creation time =0 -7949 63555 4 425 startTime = 0 endTime = 63555]
+HALshell: PID = [5] RETURN_VALUE = [OK]MESSAGE = [creation time =0 -7949 63634 4 425 startTime = 0 endTime = 63634]
+HALshell: PID = [6] RETURN_VALUE = [OK]MESSAGE = [creation time =0 -7949 63639 4 425 startTime = 0 endTime = 63639]
+HALshell: PID = [7] RETURN_VALUE = [OK]MESSAGE = [creation time =0 -7949 63662 4 425 startTime = 0 endTime = 63662]
+HALshell: PID = [8] RETURN_VALUE = [OK]MESSAGE = [creation time =0 -7949 63667 4 425 startTime = 0 endTime = 63667]
+HALshell: PID = [9] RETURN_VALUE = [OK]MESSAGE = [creation time =0 -7949 63672 4 425 startTime = 0 endTime = 63672]
+HALshell[12]> shutdown
+
+HALshell: terminating ...
+HALos: terminating ...
+HAL9000: powering down ...
+a049841[22]% exit
+exit
+
+Script done on Tue 06 Mar 2018 11:27:08 PM CST

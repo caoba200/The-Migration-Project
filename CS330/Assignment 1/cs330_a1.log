@@ -1,0 +1,207 @@
+Script started on Mon 22 Jan 2018 10:59:08 PM CST
+a049850[21]% HALstart
+[3;J[H[2J
+*********************************************
+*               HALos v5.3.6                *
+*                                           *
+*  Copyright (c) 2018 Robert J. Hilderman.  *
+*           All Rights Reserved.            *
+*********************************************
+
+HALstart: powering up HAL9000 ...
+HALstart: HAL9000 OK
+HAL9000: initializing ...
+HAL9000: boot sequence started ...
+HAL9000: checking clock ...
+HAL9000: clock OK
+HAL9000: loading HALbios ...
+HAL9000: HALbios OK
+HALbios: initializing ...
+HALbios: checking memory ...
+HALbios: memory OK
+HALbios: loading HALos ...
+HALbios: HALos OK
+HALos: initializing ...
+HALos: loading HALshell ...
+HALos: HALshell OK
+HALshell: initializing ...
+
+HALshell[1]> 
+HALshell[1]> showhistory
+1: showhistory
+HALshell[2]> ! 1
+2: showhistory
+1: showhistory
+HALshell[3]> setshellname hsh
+hsh[4]> showhistory
+4: showhistory
+3: showhistory
+2: setshellname
+1: showhistory
+hsh[5]> setshellname myshell
+myshell[6]> showhistory
+6: showhistory
+5: showhistory
+4: setshellname
+3: showhistory
+2: setshellname
+1: showhistory
+myshell[7]> ! 4
+hsh[8]> ! 2
+8: showhistory
+7: showhistory
+6: setshellname
+5: showhistory
+4: setshellname
+3: showhistory
+2: setshellname
+1: showhistory
+hsh[9]> !
+9: showhistory
+8: showhistory
+7: setshellname
+6: showhistory
+5: setshellname
+4: showhistory
+3: setshellname
+2: showhistory
+1: showhistory
+hsh[10]> ! 5
+myshell[11]> ! 3
+10: showhistory
+9: setshellname
+8: showhistory
+7: setshellname
+6: showhistory
+5: setshellname
+4: showhistory
+3: showhistory
+2: setshellname
+1: showhistory
+myshell[12]> ! 20
+10: setshellname
+9: showhistory
+8: setshellname
+7: showhistory
+6: setshellname
+5: showhistory
+4: showhistory
+3: setshellname
+2: showhistory
+1: showhistory
+myshell[13]> sethistorysize 5
+myshell[14]> showhistory
+5: setshellname
+4: showhistory
+3: showhistory
+2: sethistorysize
+1: showhistory
+myshell[15]> setnewnames  sh1 showhistory
+myshell[16]> 
+myshell[16]> sh1
+5: showhistory
+4: sethistorysize
+3: showhistory
+2: setnewname
+1: sh1
+myshell[17]> setnewma  name sh2 sh1
+myshell[18]> sh1 2
+5: showhistory
+4: setnewname
+3: sh1
+2: setnewname
+1: sh2
+myshell[19]> writenewnames mynewnames1
+myshell[20]> shownewnames
+sh2 sh1 
+sh1 showhistory 
+myshell[21]> sh2
+5: setnewname
+4: sh2
+3: writenewnames
+2: shownewnames
+1: sh2
+myshell[22]> setnewname showhistory showhistory
+myshell[23]> setnewname sh1 sh1
+myshell[24]> sh1
+HALshell: MESSAGE = [command not found]
+myshell[25]> setnewname st1 setterminator
+myshell[26]> setnewname st2 setterminator :
+myshell[27]> setnewname st3 setterminator =>>
+myshell[28]> st3
+myshell[29]=>> st2
+myshell[30]: st1 =>>
+myshell[31]=>> setnewname sh1
+HALshell: the number of arguments for setnewname is incorrect
+myshell[32]=>> sh1
+HALshell: MESSAGE = [command not found]
+myshell[33]=>> wrie tenewnames mynewnames  2
+myshell[34]=>> setshellname HALshell
+HALshell[35]=>> sh2
+HALshell: MESSAGE = [command not found]
+HALshell[36]=>> shw ownewnames
+st3 setterminator =>> 
+st2 setterminator : 
+st1 setterminator 
+sh1 sh1 
+showhistory showhistory 
+HALshell[37]=>> setnewnames 
+HALshell: the number of arguments for setnewname is incorrect
+HALshell[38]=>> shownewnames
+st3 setterminator =>> 
+st2 setterminator : 
+st1 setterminator 
+sh1 sh1 
+showhistory showhistory 
+HALshell[39]=>> readnewnames mynewnames2
+HALshell[40]=>> shownewnames
+showhistory showhistory 
+sh1 sh1 
+st1 setterminator 
+st2 setterminator : 
+st3 setterminator =>> 
+HALshell[41]=>> st1 >
+HALshell[42]> readnewnames mynewnames  1
+HALshell[43]> shownewnames
+sh1 showhistory 
+sh2 sh1 
+HALshell[44]> halprograms/austinpowers
+As Austin Powers would say, "Groovy, Baby!"
+HALshell[45]> result
+HALshell: PID = [1] RETURN_VALUE = [As Austin Powers would say, "Groovy, Baby!"] 
+HALshell[46]> setnewname ap halprograms/austinpowers
+HALshell[47]> ap -
+HALshell: PID = [2] MESSAGE = [background process created]
+HALshell[48]> As Austin Powers would say, "Groovy, Baby!"
+
+HALshell[48]> result
+HALshell[49]> setnewname il pro   halprograms/infiniteloopnooutput
+HALshell[50]> li -
+HALshell: MESSAGE = [command not found]
+HALshell[51]> il -
+HALshell: PID = [3] MESSAGE = [background process created]
+HALshell[52]> cull 3
+HALshell: PID = [4] RETURN_VALUE = [ok] MESSAGE = [process 3 culled]
+HALshell[53]> result
+HALshell[54]> il
+^C
+HALshell: RETURN_VALUE = [ok] MESSAGE = [process 5 culled]
+HALshell[55]> result
+HALshell[56]> halprograms/loopwithvariablecounter 100
+HALshell[57]> result
+HALshell: PID = [6] 
+HALshell[58]> shownewnames
+il halprograms/infiniteloopnooutput 
+ap halprograms/austinpowers 
+sh1 showhistory 
+sh2 sh1 
+HALshell[59]> shutdown
+
+HALshell: terminating ...
+HALos: terminating ...
+HAL9000: powering down ...
+
+a049850[22]% exit
+exit
+
+Script done on Mon 22 Jan 2018 11:05:44 PM CST

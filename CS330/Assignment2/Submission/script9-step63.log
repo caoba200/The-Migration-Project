@@ -1,0 +1,863 @@
+Script started on Tue 06 Feb 2018 10:30:14 PM CST
+a049841[21]% HALstart
+[3;J[H[2J
+*********************************************
+*               HALos v5.3.6                *
+*                                           *
+*  Copyright (c) 2018 Robert J. Hilderman.  *
+*           All Rights Reserved.            *
+*********************************************
+
+HALstart: powering up HAL9000 ...
+HALstart: HAL9000 OK
+HAL9000: initializing ...
+HAL9000: boot sequence started ...
+HAL9000: checking clock ...
+HAL9000: clock OK
+HAL9000: loading HALbios ...
+HAL9000: HALbios OK
+HALbios: initializing ...
+HALbios: checking memory ...
+HALbios: memory OK
+HALbios: loading HALos ...
+HALbios: HALos OK
+HALos: initializing ...
+HALos: loading HALshell ...
+HALos: HALshell OK
+HALshell: initializing ...
+
+HALshell[1]> stopcpuscheduler
+HALshell: PID = [1] RETURN_VALUE = [ok] MESSAGE = [cpu scheduler stopped]
+HALshell[2]> localintegerquicksortwithfileio sorteddata1 -
+HALshell: MESSAGE = [command not found]
+HALshell[3]> halprograms/localintegerquicksortwithfileio sorteddata1 -
+HALshell: PID = [2] MESSAGE = [background process created]
+HALshell[4]> halprograms/localintegerquicksortwithfileio sorteddata1   2 priority=2 -
+HALshell: PID = [3] MESSAGE = [background process created]
+HALshell[5]> halprograms/localintegerquicksortwithfileio sorteddata1 3 -
+HALshell: PID = [4] MESSAGE = [background process created]
+HALshell[6]> halprograms/localintegerquicksortwithfileio sorteddata1 4 priority=o 0 -
+HALshell: PID = [5] MESSAGE = [background process created]
+HALshell[7]> halprograms/localintegerquicksortwithfileio sorteddata1 5 -
+HALshell: PID = [6] MESSAGE = [background process created]
+HALshell[8]> halprograms/localintegerquicksortwithfileio sorteddata1 6 -
+HALshell: PID = [7] MESSAGE = [background process created]
+HALshell[9]> halprograms/localintegerquicksortwithfileio sorteddata1 7 -
+HALshell: PID = [8] MESSAGE = [background process created]
+HALshell[10]> halprograms/localintegerquicksortwithfileio sorteddata1 8 -
+HALshell: PID = [9] MESSAGE = [background process created]
+HALshell[11]> halprograms/localintegerquicksortwithfileio sorteddata1 9 -
+HALshell: PID = [10] MESSAGE = [background process created]
+HALshell[12]> halprograms/localintegerquicksortwithfileio sorteddata10 prioriry=1 -
+HALshell: PID = [11] MESSAGE = [background process created]
+HALshell[13]> startcpuscheduler
+HALshell: PID = [12] RETURN_VALUE = [ok] MESSAGE = [cpu scheduler started]
+HALshell[14]> a<0a<> = 00> = 
+0a<
+1a<> = 10> = 
+0a<
+2a<> = 20> = 
+0a<
+3a<> = 30> = 
+0a<
+4a<> = 40> = 
+0a<
+5a<> = 50> = 
+0a<
+6a<> = 60> = 
+0a<
+7a<> = 70> = 
+0a<
+8> = a<08
+> = a<09
+> = a<09
+> = a<010
+> = a<010
+> = a<011
+> = a<011
+> = a<012
+> = a<012
+> = a<013> = 
+0a<
+13a<> = 140> = 
+0a<
+14a<> = 150> = 
+0a<
+a<1516> = > = 00
+
+a<a<1617> = > = 00
+
+a<a<1718> = > = 00
+
+a<a<1819> = > = 00
+
+a<a<1920> = > = 00
+
+a<a<2021> = > = 00
+
+a<a<2122> = > = 00
+
+a<a<2223> = > = 00
+
+a<a<2324> = > = 00
+
+a<a<2425> = > = 00
+
+a<a<2526> = > = 00
+
+a<27a<> = 260> = 
+0a<
+28a<> = 270> = 
+0a<29
+> = a<028
+> = a<030
+> = a<029
+> = a<031
+> = a<030
+> = a<0a<0
+a<> = a<a<031a<
+> = a<a<01
+> = 0
+a<a<a<0a<2> = > = 0a<0
+0
+a<0a<130> = > = 0000000
+
+> = > = a<a<> = > = 24> = > = > = 00
+
+> = a<a<53> = > = 0> = 
+0> = a<
+06a<> = 40> = 
+00a<
+70a<> = 50> = 
+00a<
+8a<> = 0600> = 
+00a<
+9a<0> = 70> = 
+
+a<010
+
+> = a<
+08
+> = a<
+011
+> = 
+
+0a<
+
+9a<
+> = 120> = a<0
+
+a<a<a<a<1310a<> = > = 0a<0
+a<
+a<a<a<1411a<> = > = 1001
+
+a<1a<15121> = > = 1001
+
+1a<a<11613> = > = > = 00
+
+a<a<1714> = > = 0> = 
+0> = a<
+18> = a<> = > = 015
+> = a<019
+> = a<016
+> = a<> = 200> = > = 
+> = 0a<0
+170a<> = 210> = 
+0a<
+18a<> = 02200> = 
+0a<
+190a<> = 230> = 
+0a<
+20a<> = 240> = 00
+
+a<a<2125> = > = 00
+
+a<a<22260> = > = 00
+
+a<a<2723> = > = 00
+
+a<a<2824> = > = 00
+
+a<a<2925> = > = 00
+
+a<a<3026> = > = 00
+
+a<a<3127> = > = 00
+
+a<280> = 0
+a<
+29> = 0
+a<
+30> = 0
+a<31> = 0
+
+
+
+
+
+
+a<a<a<a<a<a<a<a<22222222> = > = > = > = > = > = > = > = 00000000
+
+
+
+
+
+
+
+a<a<a<a<a<a<a<a<33333333> = > = > = > = > = > = > = > = 00000
+0
+
+
+a<
+a<a<044
+0a<44a<> = > = 
+a<> = > = a<0044
+> = 4a<> = 005> = 0
+
+
+
+00> = a<a<
+
+a<05a<5a<a<5
+> = 455
+a<> = > = > = 0> = a<5000> = 
+
+
+00
+> = 
+6
+a<a<> = a<a<0a<6666> = 5a<
+> = > = a<6> = > = > = 060
+> = 0a<0600> = 0
+0
+
+
+
+0
+a<
+a<a<a<a<
+a<7a<7777a<7> = 7> = > = > = > = 7^C  > = 0> = 0000> = 0
+0
+
+
+
+0
+a<
+a<a<a<a<
+a<8a<8888^C  a<8> = 8> = > = > = > = 8> = 0> = 0000> = 0
+0
+
+
+
+0
+a<^C  
+a<a<a<a<
+a<9a<9999a<9^C  > = 9> = > = > = > = 9> = 0^C  > = 0000> = 0
+0
+
+
+
+0
+a<
+a<a<a<a<^C  
+a<10a<101010^C  10a<10> = ^C  10> = > = > = > = 10> = 0> = 000
+HALshell[14]> 0> = 0
+0
+
+
+
+0
+a<
+a<a<a<a<
+a<11a<11111111a<11> = 11> = ^C  > = > = > = 11> = 0> = 0000> = 0
+0
+HALshell[14]> 
+
+
+
+0
+a<
+a<a<a<a<
+a<12a<12121212a<12> = 12> = > = > = > = 12> = ^C  0> = 0000> = 0
+0
+
+
+
+HALshell[14]> 
+0
+a<
+a<a<a<a<
+a<13a<13131313a<13> = 13> = > = > = > = 13> = 0> = 0000> = 0
+0
+
+
+
+0
+a<
+a<^C  a<a<a<
+a<14a<14141414a<14> = 14> = 
+HALshell[14]> > = > = > = 14> = 0> = 0000> = 0
+0
+
+
+
+0
+a<
+a<a<a<a<
+a<15a<15^C  151515a<15> = 15> = > = > = > = 15> = 0> = 0000
+HALshell[14]> > = 0
+0
+^C  
+
+
+0
+a<
+a<a<a<
+HALshell[14]> a<
+a<16a<1616^C  1616a<16
+HALshell[14]> > = 16> = > = ^C  > = > = 
+HALshell[14]> 16> = 0> = 0000> = 0
+0
+^C  
+
+
+
+HALshell[14]> 0
+a<
+a<a<^C  a<a<
+a<
+HALshell[14]> 17a<17171717^C  a<17
+HALshell[14]> > = 17> = > = > = > = 17^C  > = 0> = 0000> = 
+HALshell[14]> 0
+0
+
+
+
+^C  0
+a<
+a<a<
+HALshell[14]> a<a<
+a<18a<18^C  181818
+HALshell[14]> a<18> = 18> = > = > = ^C  > = 18> = 
+HALshell[14]> 0> = 0000^C  > = 0
+0
+
+
+
+0^C  
+a<
+a<a<a<a<^C  
+a<19a<19
+HALshell[14]> 191919a<19> = 19> = ^C  > = > = > = 19
+HALshell[14]> > = 0> = 0000> = ^C  0
+0
+
+HALshell[14]> 
+
+
+0
+a<
+^C  a<a<a<a<
+HALshell[14]> 
+a<20a<202020^C  20a<
+HALshell[14]> 20> = 20> = > = > = ^C  > = 20> = 0
+HALshell[14]> > = 0000> = 0
+0^C  
+
+
+
+0
+HALshell[14]> 
+a<
+a<^C  a<a<
+HALshell[14]> a<
+a<21a<^C  21
+HALshell[14]> 212121a<21^C  > = 21
+HALshell[14]> > = > = > = > = 21> = ^C  0
+HALshell[14]> > = 0000> = 0
+^C
+  0
+
+
+
+0^C  
+a<
+HALshell[14]> 
+a<^C  a<
+HALshell[14]> a<a<
+a<22a<2222^C  22
+HALshell[14]> 22a<22> = 22> = > = 
+HALshell[14]> > = ^C  > = 22> = 0> = 0^C  000> = 0
+0
+
+^C  
+
+
+HALshell[14]> 0
+a<
+a<a<a<a<
+a<23^C  a<23232323
+HALshell[14]> a<23> = 23> = > = ^C  > = > = 23> = 0> = 
+HALshell[14]> 0000> = 0
+0^C  
+
+
+
+0
+a<
+a<a<^C  a<a<
+a<24a<24
+HALshell[14]> 242424a<24> = 24^C  > = > = > = 
+HALshell[14]> > = 24> = 0> = 00^C  00
+HALshell[14]> > = 0
+0
+
+
+
+^C  0
+
+HALshell[14]> a<
+a<a<a<a<
+^C  a<25
+HALshell[14]> a<25252525a<25> = ^C  
+HALshell[14]> 25> = > = > = > = 25> = 0> = ^C  0
+HALshell[14]> 000> = 0
+0
+
+^C  
+
+HALshell[14]> 
+0
+a<
+^C  a<
+HALshell[14]> a<a<a<
+a<26a<^C  2626
+HALshell[14]> 2626a<26> = 26> = > = > = > = 26> = 0^C  > = 0
+HALshell[14]> 000> = 0
+0
+^C  
+
+
+HALshell[14]> 
+0
+a<
+a<^C  a<
+HALshell[14]> a<a<
+a<27a<27^C  27
+HALshell[14]> 2727a<27> = 27^C  > = 
+HALshell[14]> > = > = > = 27> = 0> = 0^C  0
+HALshell[14]> 00> = 0
+0
+^C  
+
+HALshell[14]> 
+
+0
+a<^C  
+a<
+HALshell[14]> a<a<a<
+a<28^C  a<
+HALshell[14]> 28282828a<^C  28> = 
+HALshell[14]> 28> = > = > = > = 28^C  > = 0
+HALshell[14]> > = 0000> = 0^C  
+0
+HALshell[14]> 
+
+
+
+0
+a<^C  
+a<
+HALshell[14]> a<a<a<
+a<29a<^C  29
+HALshell[14]> 292929a<29> = 29> = ^C  > = > = 
+HALshell[14]> > = 29> = 0> = 0^C  0
+HALshell[14]> 00> = 0^C  
+
+HALshell[14]> 0
+
+
+
+0^C  
+
+HALshell[14]> a<
+a<a<a<^C  a<
+
+HALshell[14]> a<30a<3030^C  3030
+HALshell[14]> a<30> = 30^C  > = > = 
+HALshell[14]> > = > = 30> = ^C  0> = 
+HALshell[14]> 0000> = 0
+0
+
+
+
+0
+a<
+a<a<
+HALshell[14]> a<a<
+a<31a<31313131
+HALshell[14]> a<31> = 31> = > = 
+HALshell[14]> > = > = 31> = 0> = 00
+HALshell[14]> 00> = 0^C  
+0
+
+HALshell[14]> 
+
+
+0
+^C  
+
+HALshell[14]> 
+^C  
+HALshell[14]> a<a<a<a<a<0a<a<0000a<> = 00> = > = > = > = 00> = > = 0000> = 
+00
+
+
+
+0a<
+
+a<a<a<a<
+1a<a<1111a<> = 11> = > = > = > = 10> = > = 0000> = 
+00
+
+
+
+0a<
+
+a<a<a<a<
+2a<a<2222a<> = 22> = > = > = > = 20> = > = 0000> = 
+00
+
+
+
+0a<
+
+a<a<a<a<
+3a<a<3333a<> = 33> = > = > = > = 30> = > = 0000> = 
+00
+
+
+
+0a<
+
+a<a<a<a<
+4a<a<4444a<> = 44> = > = > = > = 40> = > = 0000> = 
+00
+
+^C  
+
+0a<
+
+a<a<a<a<
+5a<
+HALshell[14]> a<5555a<> = ^C  5
+HALshell[14]> 5> = > = > = > = 50> = ^C  > = 
+HALshell[14]> 0000> = 
+00
+
+
+
+0a<^C  
+
+a<a<a<
+HALshell[14]> a<
+6a<a<6666^C  a<> = 
+HALshell[14]> 66> = > = > = > = 60> = > = 00^C  00> = 
+00
+
+
+^C  
+0a<
+
+a<a<a<a<^C  
+7
+HALshell[14]> a<a<7^C  777
+HALshell[14]> a<> = 77> = ^C  > = > = > = 
+HALshell[14]> 70> = > = ^C  00
+HALshell[14]> 00> = 
+00
+
+^C  
+
+
+HALshell[14]> 0a<
+
+a<a<a<^C  a<
+
+HALshell[14]> 8a<a<88^C  88
+HALshell[14]> a<> = 8^C  8> = > = 
+HALshell[14]> > = > = ^C  80
+HALshell[14]> ^C  > = > = 0000> = 
+00
+
+
+
+0a<
+
+a<a<a<a<
+9a<a<9999a<> = 99> = > = > = > = 90> = > = 0000> = 
+00
+
+
+
+0a<
+
+a<a<a<a<
+10a<a<10101010a<> = 1010> = > = > = > = 100> = > = 0000> = 
+00
+
+
+
+0a<
+
+a<a<a<a<
+11a<a<11111111a<> = 1111> = > = > = > = 110> = > = 0000> = 
+00
+
+
+
+0a<
+
+a<a<a<a<
+12a<a<12121212a<> = 1212> = > = > = > = 120> = > = 0000> = 
+00
+
+
+
+0a<
+
+a<a<a<a<
+13a<a<13131313a<> = 1313> = > = > = > = 130> = > = 0000> = 
+00
+
+
+
+0a<
+
+a<a<a<a<
+14a<a<14141414a<> = 1414> = > = > = > = 140> = > = 0000> = 
+00
+
+
+
+0a<
+
+a<a<a<a<
+15a<a<15151515a<> = 1515> = > = > = > = 150> = > = 0000> = 
+00
+
+
+
+0a<
+
+a<a<a<a<
+^C  16a<a<
+HALshell[14]> 16161616a<> = 16^C  16> = 
+HALshell[14]> > = > = > = 160> = > = ^C  0
+HALshell[14]> 000> = 
+00^C  
+
+HALshell[14]> 
+
+
+0a<
+
+^C  a<
+HALshell[14]> a<a<a<
+17a<a<^C  
+HALshell[14]> 17171717a<> = 17^C  17
+HALshell[14]> > = > = > = > = 170^C  > = 
+HALshell[14]> > = 0000> = ^C  
+
+HALshell[14]> 00
+
+
+^C  
+0
+HALshell[14]> a<
+
+a<a<a<^C  a<
+HALshell[14]> 
+18a<a<^C  18
+HALshell[14]> 181818a<> = 1818> = > = > = ^C  > = 
+HALshell[14]> 180> = > = 000^C  0> = 
+HALshell[14]> 
+00
+
+
+
+^C  0a<
+HALshell[14]> 
+
+a<a<a<a<
+19a<a<19191919a<^C  > = 
+HALshell[14]> 1919> = > = > = > = 190> = > = ^C  0
+HALshell[14]> 000> = 
+00
+
+
+^C  
+
+HALshell[14]> 0a<
+
+a<a<a<a<
+^C  20a<
+HALshell[14]> a<20202020a<> = ^C  20
+HALshell[14]> 20> = > = > = > = 200^C  > = > = 
+HALshell[14]> 0000> = 
+00^C  
+
+HALshell[14]> 
+
+
+0a<
+
+^C  a<a<
+HALshell[14]> a<a<
+21a<^C  a<21
+HALshell[14]> 212121a<> = ^C  2121
+HALshell[14]> > = > = > = ^C  > = 21
+HALshell[14]> 0> = ^C  > = 0
+HALshell[14]> ^C  0
+HALshell[14]> 0^C  0> = 
+0
+HALshell[14]> ^C  0
+
+
+
+
+HALshell[14]> 0^C  a<
+
+a<
+HALshell[14]> a<^C  a<a<
+22a<^C  
+HALshell[14]> a<22222222a<^C  > = 22
+HALshell[14]> 22> = > = > = > = ^C  220> = > = 
+HALshell[14]> 0000> = ^C  
+00
+
+HALshell[14]> 
+
+c
+0a<
+
+
+a<HALshell: MESSAGE = [command not found]
+HALshell[15]> a<ca<a<
+23a<
+a<cHALshell: MESSAGE = [command not found]
+HALshell[16]> 23232323a<^C  > = 
+HALshell[16]> 2323> = ^C  > = > = 
+HALshell[16]> > = 230^C  > = > = 00
+HALshell[16]> 00> = 
+0^C  0
+HALshell[16]> 
+
+
+
+^C  
+HALshell[16]> 0a<
+
+a<
+HALshell[16]> ^C  a<a<a<
+HALshell[16]> 
+^C  24a<a<^C  
+HALshell[16]> 24242424
+HALshell[16]> a<^C  > = 24
+HALshell[16]> 24> = ^C  > = > = 
+HALshell[16]> > = 24
+HALshell[16]> 0^C  > = > = 0000> = 
+00
+
+^C  
+
+
+HALshell[16]> 0a<
+
+
+HALshell[16]> a<a<a<a<
+HALshell[16]> 
+25
+HALshell[16]> a<a<
+HALshell[16]> 2525
+HALshell[16]> 2525a<
+HALshell[16]> > = 2525
+HALshell[16]> > = > = 
+HALshell[16]> > = > = 
+HALshell[16]> 250
+HALshell[16]> > = > = 
+HALshell[16]> 00
+HALshell[16]> 00
+HALshell[16]> > = 
+
+HALshell[16]> 0
+HALshell[16]> 0
+
+HALshell[16]> 
+
+
+0a<
+
+a<a<a<a<
+26a<a<26262626a<> = 2626> = > = > = > = 260> = > = 0000> = 
+00
+
+
+
+0a<
+
+a<a<a<a<
+27a<a<27272727a<> = 2727> = > = > = > = 270> = > = 0000> = 
+00
+
+
+
+0a<
+
+a<a<a<a<
+28a<a<28282828a<> = 2828> = > = > = > = 280> = > = 0000> = 
+00
+
+
+
+0a<
+
+a<a<a<a<
+29a<a<29292929a<> = 2929> = > = > = > = 290> = > = 0000> = 
+00
+
+
+
+0a<
+
+a<a<a<a<
+30a<a<30303030a<> = 3030> = > = > = > = 300> = > = 0000> = 
+00
+
+
+
+0a<
+
+a<a<a<a<
+31a<a<31313131a<> = 3131> = > = > = > = 310> = > = 0000> = 
+00
+
+
+
+0
+
+
+
+HALshell[16]> ^C  
+HALshell[16]> 
+HALshell[16]> 
+HALshell[16]> sh  shutdown
+
+HALshell: terminating ...
+HALos: terminating ...
+HAL9000: powering down ...
+
+a049841[22]% exit
+exit
+
+Script done on Tue 06 Feb 2018 10:36:00 PM CST

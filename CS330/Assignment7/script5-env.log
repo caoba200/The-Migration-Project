@@ -1,0 +1,16 @@
+Script started on Thu 12 Apr 2018 10:24:52 PM CST
+a049851[21]% environment
+Environment [HOST=a049851 PID=32231}: Press [ctrl/d] to start
+Environment [HOST=a049851 PID=32231]: [start] sent to [HOST=a049855 PORT=56130]
+Environment [HOST=a049851 PID=32231]: [start] sent to [HOST=a049852 PORT=53886]
+Environment [HOST=a049851 PID=32231]: [start] sent to [HOST=a049853 PORT=55508]
+Environment [HOST=a049851 PID=32231]: [start] sent to [HOST=a049854 PORT=60454]
+Environment [HOST=a049851 PID=32231]: Press [ctrl/d] to shutdown 
+Environment [HOST=a049851 PID=32231]: [shutdown] sent to [HOST=a049855 PORT=56130]
+Environment [HOST=a049851 PID=32231]: [shutdown] sent to [HOST=a049852 PORT=53886]
+Environment [HOST=a049851 PID=32231]: [shutdown] sent to [HOST=a049853 PORT=55508]
+Environment [HOST=a049851 PID=32231]: [shutdown] sent to [HOST=a049854 PORT=60454]
+a049851[22]% exit
+exit
+
+Script done on Thu 12 Apr 2018 10:27:00 PM CST

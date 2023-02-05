@@ -1,0 +1,90 @@
+Script started on Sun 18 Mar 2018 11:57:55 PM CST
+a049841[21]% HALstart
+[3;J[H[2J
+*********************************************
+*               HALos v5.3.6                *
+*                                           *
+*  Copyright (c) 2018 Robert J. Hilderman.  *
+*           All Rights Reserved.            *
+*********************************************
+
+HALstart: powering up HAL9000 ...
+HALstart: HAL9000 OK
+HAL9000: initializing ...
+HAL9000: boot sequence started ...
+HAL9000: checking clock ...
+HAL9000: clock OK
+HAL9000: loading HALbios ...
+HAL9000: HALbios OK
+HALbios: initializing ...
+HALbios: checking memory ...
+HALbios: memory OK
+HALbios: loading HALos ...
+HALbios: HALos OK
+HALos: initializing ...
+HALos: loading HALshell ...
+HALos: HALshell OK
+HALshell: initializing ...
+
+HALshell[1]> halprograms/a5_clonechain
+[My Pid =2][and my return Pid =0][My Pid = 1][and my return Pid =2]
+
+[My Pid =2][and my parent Pid =1][My Pid = 1][and my parent Pid = 0]
+
+[My pid =2 and I'm done][My pid = 1 and I'm done]
+
+HALshell[2]> [My Pid =3][and my return Pid =0][My Pid = 2][and my return Pid =3]
+
+[My Pid =3][and my parent Pid =2][My Pid = 2][and my parent Pid = 1]
+
+[My pid =3 and I'm done][My pid = 2 and I'm done]
+
+[My Pid = 3][and my return Pid =4][My Pid =4][and my return Pid =0]
+
+[My Pid = 3][and my parent Pid = 2][My Pid =4][and my parent Pid =3]
+
+[My pid = 3 and I'm done][My pid =4 and I'm done]
+
+[My Pid =5][and my return Pid =0][My Pid = 4][and my return Pid =5]
+
+[My Pid =5][and my parent Pid =4][My Pid = 4][and my parent Pid = 3]
+
+[My pid =5 and I'm done][My pid = 4 and I'm done]
+
+[My Pid =6][and my return Pid =0][My Pid = 5][and my return Pid =6]
+
+[My Pid =6][and my parent Pid =5][My Pid = 5][and my parent Pid = 4]
+
+[My pid =6 and I'm done][My pid = 5 and I'm done]
+
+[My Pid =7][and my return Pid =0][My Pid = 6][and my return Pid =7]
+
+[My Pid =7][and my parent Pid =6][My Pid = 6][and my parent Pid = 5]
+
+[My pid =7 and I'm done][My pid = 6 and I'm done]
+
+[My Pid = 7][and my return Pid =8][My Pid =8][and my return Pid =0]
+
+[My Pid = 7][and my parent Pid = 6][My Pid =8][and my parent Pid =7]
+
+[My pid = 7 and I'm done][My pid =8 and I'm done]
+
+result
+HALshell: PID = [1] RETURN_VALUE = [OK] MESSAGE = [creation time =-1 -82 543 0 6463584]
+HALshell[3]> result
+HALshell: PID = [2] RETURN_VALUE = [OK]MESSAGE = [creation time =0 -134 1027 0 13]
+HALshell: PID = [3] RETURN_VALUE = [OK]MESSAGE = [creation time =0 -134 1457 0 13]
+HALshell: PID = [4] RETURN_VALUE = [OK]MESSAGE = [creation time =0 -134 1995 0 13]
+HALshell: PID = [5] RETURN_VALUE = [OK]MESSAGE = [creation time =0 -134 2479 0 13]
+HALshell: PID = [6] RETURN_VALUE = [OK]MESSAGE = [creation time =0 -134 2963 0 13]
+HALshell: PID = [7] RETURN_VALUE = [OK]MESSAGE = [creation time =0 -134 3393 0 13]
+HALshell: PID = [8] RETURN_VALUE = [OK]MESSAGE = [creation time =0 -71 3416 0 6]
+HALshell[4]> shutdown
+
+HALshell: terminating ...
+HALos: terminating ...
+HAL9000: powering down ...
+a049841[22]% exit
+exit
+
+Script done on Sun 18 Mar 2018 11:58:27 PM CST

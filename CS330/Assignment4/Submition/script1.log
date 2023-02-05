@@ -1,0 +1,66 @@
+Script started on Tue 06 Mar 2018 09:48:47 PM CST
+a049841[21]% HALstart
+[3;J[H[2J
+*********************************************
+*               HALos v5.3.6                *
+*                                           *
+*  Copyright (c) 2018 Robert J. Hilderman.  *
+*           All Rights Reserved.            *
+*********************************************
+
+HALstart: powering up HAL9000 ...
+HALstart: HAL9000 OK
+HAL9000: initializing ...
+HAL9000: boot sequence started ...
+HAL9000: checking clock ...
+HAL9000: clock OK
+HAL9000: loading HALbios ...
+HAL9000: HALbios OK
+HALbios: initializing ...
+HALbios: checking memory ...
+HALbios: memory OK
+HALbios: loading HALos ...
+HALbios: HALos OK
+HALos: initializing ...
+HALos: loading HALshell ...
+HALos: HALshell OK
+HALshell: initializing ...
+
+HALshell[1]> stopcpuscheduler
+HALshell: PID = [1] RETURN_VALUE = [ok] MESSAGE = [cpu scheduler stopped]
+HALshell[2]> halprograms/loopwithvariablecounter 10000 -
+HALshell: PID = [2] MESSAGE = [background process created]
+HALshell[3]> halprograms/loopwithvariablecounter 10000 -
+HALshell: PID = [3] MESSAGE = [background process created]
+HALshell[4]> halprograms/loopwithvariablecounter 10000 -
+HALshell: PID = [4] MESSAGE = [background process created]
+HALshell[5]> halprograms/loopwithvariablecounter 10000 -
+HALshell: PID = [5] MESSAGE = [background process created]
+HALshell[6]> halprograms/loopwithvariablecounter 10000 -
+HALshell: PID = [6] MESSAGE = [background process created]
+HALshell[7]> halprograms/loopwithvariablecounter 10000 -
+HALshell: PID = [7] MESSAGE = [background process created]
+HALshell[8]> halprograms/loopwithvariablecounter 10000 -
+HALshell: PID = [8] MESSAGE = [background process created]
+HALshell[9]> halprograms/loopwithvariablecounter 10000 -
+HALshell: PID = [9] MESSAGE = [background process created]
+HALshell[10]> startcpuscheduler
+HALshell: PID = [10] RETURN_VALUE = [ok] MESSAGE = [cpu scheduler started]
+HALshell[11]> result
+HALshell: PID = [2] RETURN_VALUE = []MESSAGE = [creation time =0 -90010 712632 89 2 startTime = 0 endTime = 712632]
+HALshell: PID = [3] RETURN_VALUE = []MESSAGE = [creation time =0 -90010 719723 90 2 startTime = 0 endTime = 719723]
+HALshell: PID = [4] RETURN_VALUE = []MESSAGE = [creation time =0 -90010 719724 90 2 startTime = 0 endTime = 719724]
+HALshell: PID = [5] RETURN_VALUE = []MESSAGE = [creation time =0 -90010 719775 90 2 startTime = 0 endTime = 719775]
+HALshell: PID = [6] RETURN_VALUE = []MESSAGE = [creation time =0 -90010 719801 90 2 startTime = 0 endTime = 719801]
+HALshell: PID = [7] RETURN_VALUE = []MESSAGE = [creation time =0 -90010 719828 90 2 startTime = 0 endTime = 719828]
+HALshell: PID = [8] RETURN_VALUE = []MESSAGE = [creation time =0 -90010 720132 90 2 startTime = 0 endTime = 720132]
+HALshell: PID = [9] RETURN_VALUE = []MESSAGE = [creation time =0 -90010 720160 90 2 startTime = 0 endTime = 720160]
+HALshell[12]> shutdown
+
+HALshell: terminating ...
+HALos: terminating ...
+HAL9000: powering down ...
+a049841[22]% exit
+exit
+
+Script done on Tue 06 Mar 2018 09:57:37 PM CST
