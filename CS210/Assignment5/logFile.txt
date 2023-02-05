@@ -1,0 +1,71 @@
+Doctor Mark is checked in and is assigned to room 25
+The current status of the clinic: 
+Room	Doctor			Patient List
+25		Mark				
+
+Doctor Bill is checked in and is assigned to room 50
+The current status of the clinic: 
+Room	Doctor			Patient List
+25		Mark				
+
+50		Bill				
+
+Patient A is assigned to room 25 where doctor Mark has been assigned.
+The current clinic status is 
+Room	Doctor			Patient List
+25		Mark				A 
+
+50		Bill				
+
+Patient B is assigned to room 25 where doctor Mark has been assigned.
+The current clinic status is 
+Room	Doctor			Patient List
+25		Mark				A B 
+
+50		Bill				
+
+Patient C is assigned to room 25 where doctor Mark has been assigned.
+The current clinic status is 
+Room	Doctor			Patient List
+25		Mark				C A B 
+
+50		Bill				
+
+Patient D is assigned to room 25 where doctor Mark has been assigned.
+The current clinic status is 
+Room	Doctor			Patient List
+25		Mark				C A B D 
+
+50		Bill				
+
+Patient E is assigned to room 50 where doctor Bill has been assigned.
+The current clinic status is 
+Room	Doctor			Patient List
+25		Mark				C A B D 
+
+50		Bill				E 
+
+Patient F is assigned to room 50 where doctor Bill has been assigned.
+The current clinic status is 
+Room	Doctor			Patient List
+25		Mark				C A B D 
+
+50		Bill				E F 
+
+Patient G is assigned to room 50 where doctor Bill has been assigned.
+The current clinic status is 
+Room	Doctor			Patient List
+25		Mark				C A B D 
+
+50		Bill				G E F 
+
+Patient C is checked out. The current clinic status is 
+Room	Doctor			Patient List
+25		Mark				A B D 
+
+50		Bill				G E F 
+
+Doctor Bill is checked out. The current status of the clinic is: 
+Room	Doctor			Patient List
+25		Mark				G A B D E F 
+

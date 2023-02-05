@@ -1,0 +1,44 @@
+Class Id 	 Number of boxes sold
+1		50 
+		Total : 50
+
+2		50 
+		Total : 50
+
+3		50 
+		Total : 50
+
+4		50 
+		Total : 50
+
+5		25 25 
+		Total : 50
+
+6		50 
+		Total : 50
+
+7		50 
+		Total : 50
+
+8		50 
+		Total : 50
+
+9		50 
+		Total : 50
+
+10		50 
+		Total : 50
+
+
+*******************************
+Winners: 50 boxes
+Class 1
+Class 2
+Class 3
+Class 4
+Class 5
+Class 6
+Class 7
+Class 8
+Class 9
+Class 10

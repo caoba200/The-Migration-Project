@@ -1,0 +1,34 @@
+Class Id 	 Number of boxes sold
+1		
+		Total : 0
+
+2		
+		Total : 0
+
+3		
+		Total : 0
+
+4		
+		Total : 0
+
+5		
+		Total : 0
+
+6		
+		Total : 0
+
+7		
+		Total : 0
+
+8		
+		Total : 0
+
+9		
+		Total : 0
+
+10		
+		Total : 0
+
+
+*******************************
+Winners: 0 boxes
